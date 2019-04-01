@@ -9,31 +9,37 @@ import android.util.Log
  * Date: 2019/3/28
  * Desc: 常用的日志打印类
  */
+const val isShow: Boolean = true
 
 fun showDebug(
     tag: String = "taonce",
     msg: String
 ) {
-    Log.d(tag, msg)
+    if (isShow) {
+        Log.d(tag, msg)
+    }
 }
 
 fun showError(
     tag: String = "taonce",
     msg: String
 ) {
-    Log.e(tag, msg)
+    if (isShow)
+        Log.e(tag, msg)
 }
 
 fun showInfo(
     tag: String = "taonce",
     msg: String
 ) {
-    Log.i(tag, msg)
+    if (isShow)
+        Log.i(tag, msg)
 }
 
 fun showWarning(
     tag: String = "taonce",
     msg: String
 ) {
-    Log.w(tag, msg)
+    if (isShow)
+        Log.w(tag, msg)
 }

@@ -59,9 +59,7 @@ fun Context.getDeviceImei(): String {
     ) {
         imei = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             manager.imei
-        } else {
-            ""
-        }
+        } else ""
     }
     return imei
 }
@@ -80,9 +78,7 @@ fun Context.getDeviceMeid(): String {
     ) {
         meid = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             manager.meid
-        } else {
-            ""
-        }
+        } else ""
     }
     return meid
 }
