@@ -105,5 +105,5 @@ Context.sp2px(sp: Float): Float
 Context.px2sp(px: Float): Float
 ```
 
-[二维码](<https://github.com/Taonce/Android-Util-Kotlin/blob/master/app/src/main/res/drawable/qrcode.png>)
+![二维码](<https://github.com/Taonce/Android-Util-Kotlin/blob/master/app/src/main/res/drawable/qrcode.png>)
 
